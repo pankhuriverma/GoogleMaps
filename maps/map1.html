@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div{
+			height: 400px;
+			width: 400px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body onload="myMap()">
+<h1>My first Google map</h1>
+
+
+<div id="map"></div>
+
+<script type="text/javascript">
+	function myMap()
+	{
+		var myCanvas=document.getElementByTagName("map");
+		var mapOptions={
+			center:new google.maps.LatLng(51.508742, -0.120850),
+			zoom:5
+		};
+		var map=new google.maps.Map(mapCanvas,mapOptions);
+	}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+
+
+
+</body>
+</html>
